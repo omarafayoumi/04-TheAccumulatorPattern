@@ -8,10 +8,10 @@ in another classic form:
    IN GRAPHICS:   x = x + pixels
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
+         Aaron Wilkin, their colleagues, and OMAR A. FAYOUMI.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
-
+import math
 # -----------------------------------------------------------------------------
 # Students: As you work each of these problems, ask yourself:
 #   1. Do I need a loop?
@@ -98,6 +98,11 @@ def sum_more_cosines(m, n):
     #   Just   range(blah)   where blah is a single variable.
     #   Reason: To ensure that you get more practice using expressions.
     # -------------------------------------------------------------------------
+    sum = 0
+    for k in range(m,n+1):
+        count = count + math.cos(k)
+    return count
+
 
 
 def run_test_count_sines_from():
