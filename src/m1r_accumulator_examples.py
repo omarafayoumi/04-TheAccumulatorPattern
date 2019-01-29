@@ -44,21 +44,21 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #          including the (r + 4) but not including the (s - 10),
 #          what expression would you use in the _____ below?
 #
-#            for k in range(_____):
+#            for k in range(r+4,s-10):
 #
 #     e. The following code snippet attempts to return the number
 #          of integers from r to s, inclusive, whose cosines are positive.
 #          It has at least 5 distinct errors (one per line).  What are they?
 #
-#              for k in range(r - s):
-#                  count = 0
-#                  if math.cos(r) > 0:
-#                      count = 1
-#                  return count
+#              for k in range(r - s): <---- range statement incorrect. range(r,s+1)
+#                  count = 0 <---- supposed to come before for k statement
+#                  if math.cos(r) > 0: <---- math.cos(k***)
+#                      count = 1 <---- count = count + 1
+#                  return count <---- incorrect incrementation
 #
 #     f. The code in the "graphics accumulation" example below includes:
 #            for _ in range(n):
-#        What does the   _   (underscore) mean?
+#        What does the   _   (underscore) mean? Loop with no use of an index variable
 #
 #     g. The code in the "graphics accumulation" example below includes:
 #
